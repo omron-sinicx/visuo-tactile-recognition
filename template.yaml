@@ -1,0 +1,77 @@
+theme: default # default || dark
+organization: OMRON SINIC X
+twitter: '@omron_sinicx'
+title: 'Visuo-Tactile Zero-Shot Object Recognition with Vision-Language Model'
+conference: IROS2024
+resources:
+  paper: null
+  code: null
+  video: https://www.youtube.com/embed/BXif37gBNnY
+  blog: null
+  huggingface: null
+description: null
+image: teaser.png
+url: https://omron-sinicx.github.io/visuo-tactile-recognition
+speakerdeck: null
+authors:
+  - name: Shiori Ueda
+    affiliation: [1]
+    url: https://sh1027.github.io/
+    position: Student
+  - name: Atsushi Hashimoto
+    affiliation: [2]
+    url: https://atsushihashimoto.github.io/cv/
+    position: Principal Investigator
+  - name: Masashi Hamaya
+    affiliation: [2]
+    url: https://sites.google.com/view/masashihamaya/home
+    position: Principal Investigator
+  - name: Kazutoshi Tanaka
+    affiliation: [2]
+    url: https://kazutoshi-tanaka.github.io/pages/index_eng.html
+    position: Senior Researcher 
+  - name: Hideo Saito
+    affiliation: [1]
+    url: null
+    position: Professor
+contact_ids: ['omron', 2] #=> contact@sinicx.com, 2nd author
+affiliations:
+  - Keio University
+  - OMRON SINIC X Corporation
+meta:
+  - null
+bibtex: null # >
+  # # arXiv version
+
+  # @article{ueda2024visuotactile,
+  #   title={Visuo-Tactile Zero-Shot Object Recognition with Vision-Language Model},
+  #   author={Ueda, Shiori and Hashimoto, Atsushi and Hamaya, Masashi and Tanaka, Kazutoshi and Saito, Hideo},
+  #   journal={arXiv preprint arXiv:xxxx.xxxxx},
+  #   year={2024}
+  # }
+
+  # # IEEE version
+
+  # @inproceedings{ueda2024visuotactile,
+  #   title={Visuo-Tactile Zero-Shot Object Recognition with Vision-Language Model},
+  #   author={Ueda, Shiori and Hashimoto, Atsushi and Hamaya, Masashi and Tanaka, Kazutoshi and Saito, Hideo},
+  #   booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  #   year={2024}
+  # }
+header:
+  bg_curve:
+    sinic_curve.png
+
+teaser: teaser.png
+overview: |
+  Tactile perception is vital, especially when distinguishing visually similar objects. We propose an approach to incorporate tactile data into a Vision-Language Model (VLM) for visuo-tactile zero-shot object recognition. Our approach leverages the zero-shot capability of VLMs to infer tactile properties from the names of tactilely similar objects. The proposed method translates tactile data into a textual description solely by annotating object names for each tactile sequence during training, making it adaptable to various contexts with low training costs. The proposed method was evaluated on the FoodReplica and Cube datasets, demonstrating its effectiveness in recognizing objects that are difficult to distinguish by vision alone.
+
+body:
+  - title: Method
+    text: | 
+      The tactile embedding network learns the tactile embedding from the tactile sequence. These embeddings are converted to textual descriptions in the tactile-to-text database. During inference, the Vision Language Model (VLM) receives a textual description along with the visual image and outputs the most likely class label for the input object in a zero-shot manner.
+      <img
+        src="pipeline.png"
+        class="uk-align-center uk-responsive-width"
+        alt="Proposed pipeline."
+      />
