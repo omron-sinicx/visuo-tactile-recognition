@@ -34,7 +34,7 @@ authors:
     affiliation: [1]
     url: null
     position: Professor
-contact_ids: ['omron', 2] #=> contact@sinicx.com, 2nd author
+contact_ids: [2, omron] #=> 2nd author, contact@sinicx.com
 affiliations:
   - Keio University
   - OMRON SINIC X Corporation
