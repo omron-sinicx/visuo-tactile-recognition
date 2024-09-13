@@ -70,8 +70,9 @@ body:
   - title: Method
     text: | 
       The tactile embedding network learns the tactile embedding from the tactile sequence. These embeddings are converted to textual descriptions in the tactile-to-text database. During inference, the Vision Language Model (VLM) receives a textual description along with the visual image and outputs the most likely class label for the input object in a zero-shot manner.
+      
       <img
-        src="pipeline.png"
+        src="assets/pipeline.png"
         class="uk-align-center uk-responsive-width"
         alt="Proposed pipeline."
       />
