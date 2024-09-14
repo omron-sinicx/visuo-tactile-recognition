@@ -40,24 +40,13 @@ affiliations:
   - OMRON SINIC X Corporation
 meta:
   - null
-bibtex: null # >
-  # # arXiv version
-
-  # @article{ueda2024visuotactile,
-  #   title={Visuo-Tactile Zero-Shot Object Recognition with Vision-Language Model},
-  #   author={Ueda, Shiori and Hashimoto, Atsushi and Hamaya, Masashi and Tanaka, Kazutoshi and Saito, Hideo},
-  #   journal={arXiv preprint arXiv:xxxx.xxxxx},
-  #   year={2024}
-  # }
-
-  # # IEEE version
-
-  # @inproceedings{ueda2024visuotactile,
-  #   title={Visuo-Tactile Zero-Shot Object Recognition with Vision-Language Model},
-  #   author={Ueda, Shiori and Hashimoto, Atsushi and Hamaya, Masashi and Tanaka, Kazutoshi and Saito, Hideo},
-  #   booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  #   year={2024}
-  # }
+bibtex: >
+  @inproceedings{ueda2024visuotactile,
+    title={Visuo-Tactile Zero-Shot Object Recognition with Vision-Language Model},
+    author={Ueda, Shiori and Hashimoto, Atsushi and Hamaya, Masashi and Tanaka, Kazutoshi and Saito, Hideo},
+    booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+    year={2024}
+  }
 header:
   bg_curve:
     sinic_curve.png
