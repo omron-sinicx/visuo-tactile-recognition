@@ -4,7 +4,7 @@ twitter: '@omron_sinicx'
 title: 'Visuo-Tactile Zero-Shot Object Recognition with Vision-Language Model'
 conference: IROS2024
 resources:
-  paper: null
+  paper: http://arxiv.org/abs/2409.09276
   code: null
   video: https://www.youtube.com/embed/BXif37gBNnY
   blog: null
